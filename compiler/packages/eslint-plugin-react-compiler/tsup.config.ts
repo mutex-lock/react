@@ -12,7 +12,7 @@ export default defineConfig({
   ],
   splitting: false,
   sourcemap: false,
-  dts: false,
+  dts: true,
   bundle: true,
   format: 'cjs',
   platform: 'node',
