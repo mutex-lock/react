@@ -1142,11 +1142,11 @@ export class Environment {
 
   #isKnownReactModule(moduleName: string): boolean {
     return (
-      moduleName.toLowerCase() === 'react' ||
+      moduleName.toLowerCase() === '@rbxts/react' ||
       moduleName.toLowerCase() === 'react-dom'
     );
   }
-  static knownReactModules: ReadonlyArray<string> = ['react', 'react-dom'];
+  static knownReactModules: ReadonlyArray<string> = ['@rbxts/react', 'react-dom'];
 
   getFallthroughPropertyType(
     receiver: Type,
